@@ -4,6 +4,7 @@
     "description": "Support for the Turing Machine language",
     "icon": "images/icon.png",
     "version": "1.0.0",
+    "publisher": "MarcosGutirrezAlonso",
     "repository": {
         "type": "git",
         "url": "https://github.com/margual56/vscode-turing-machine"
