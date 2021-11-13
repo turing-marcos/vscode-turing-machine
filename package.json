@@ -2,7 +2,7 @@
     "name": "turing-machine",
     "displayName": "turing-machine",
     "description": "Support for the Turing Machine language",
-    "icon": "./images/icon.png",
+    "icon": "images/icon.png",
     "version": "1.0.0",
     "repository": {
         "type": "git",
