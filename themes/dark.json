@@ -1,0 +1,58 @@
+{
+    "$schema": "vscode://schemas/color-theme",
+    "name": "Visual Studio 2019 Dark",
+    "type": "dark",
+    // https://github.com/microsoft/vscode/blob/master/extensions/theme-defaults/themes/dark_defaults.json
+    "colors": {
+        "editor.background": "#1E1E1E",
+        "editor.foreground": "#D4D4D4",
+        "editor.inactiveSelectionBackground": "#3A3D41",
+        "editorIndentGuide.background": "#404040",
+        "editorIndentGuide.activeBackground": "#707070",
+        "editor.selectionHighlightBackground": "#ADD6FF26",
+        "list.dropBackground": "#383B3D",
+        "activityBarBadge.background": "#007ACC",
+        "sideBarTitle.foreground": "#BBBBBB",
+        "input.placeholderForeground": "#A6A6A6",
+        "settings.textInputBackground": "#292929",
+        "settings.numberInputBackground": "#292929",
+        "menu.background": "#252526",
+        "menu.foreground": "#CCCCCC",
+        "statusBarItem.remoteForeground": "#FFF",
+        "statusBarItem.remoteBackground": "#16825D",
+        "sideBarSectionHeader.background": "#0000",
+        "sideBarSectionHeader.border": "#ccc3"
+    },
+    "semanticHighlighting": true,
+    // https://github.com/microsoft/vscode/blob/master/extensions/theme-defaults/themes/dark_vs.json
+    "tokenColors": [
+        {
+            "scope": "keyword.state",
+            "settings": {
+                "foreground": "#cfc649",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "keyword.statement",
+            "settings": {
+                "foreground": "#d46060",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "keyword.value",
+            "settings": {
+                "foreground": "#6060d4",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "comment",
+            "settings": {
+                "foreground": "#49cf8c",
+                "fontStyle": "bold"
+            }
+        }
+    ]
+}

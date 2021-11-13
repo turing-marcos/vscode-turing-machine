@@ -1,0 +1,8 @@
+{
+	"file": "_file_dark",
+	"iconDefinitions": {
+		"_file_dark": {
+			"iconPath": "./images/file-icon.png"
+		}
+	}
+}

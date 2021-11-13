@@ -1,0 +1,40 @@
+{
+    "name": "turing-machine",
+    "displayName": "turing-machine",
+    "description": "Support for the Turing Machine language",
+    "icon": "./images/icon.png",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "iconThemes": [
+            {
+                "id": "turingmachineicon",
+                "label": "TuringMachineIcon",
+                "path": "./icon-theme.json"
+            }
+        ],
+        "themes": [
+            {
+              "label": "Visual Studio 2019 Dark",
+              "uiTheme": "vs-dark",
+              "path": "./themes/dark.json"
+            }
+        ],
+        "languages": [{
+            "id": "turingmachine",
+            "aliases": ["Turing Machine", "turingmachine"],
+            "extensions": [".tm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "turingmachine",
+            "scopeName": "source.tm",
+            "path": "./syntaxes/turingmachine.tmLanguage.json"
+        }]
+    }
+}
