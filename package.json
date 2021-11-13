@@ -3,7 +3,11 @@
     "displayName": "turing-machine",
     "description": "Support for the Turing Machine language",
     "icon": "./images/icon.png",
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/margual56/vscode-turing-machine"
+    },
     "engines": {
         "vscode": "^1.62.0"
     },
