@@ -5,7 +5,8 @@
 		{ "include": "#finalStates"},
 		{ "include": "#instruction" },
 		{ "include": "#state"},
-		{ "include": "#value"}
+		{ "include": "#value"},
+		{ "include": "#action"}
 	],
 	"repository": {
 		"instruction": {
@@ -14,24 +15,45 @@
 				{ "include": "#comment" }
 			]
 		},
+		"statement": {
+			"begin": "\\s*\\(",
+			"end": "\\)",
+			"beginCaptures": {
+				"0": { "name": "keyword.statement.open" }
+			},
+			"endCaptures": {
+				"0": { "name": "keyword.statement.close" }
+			},
+			"patterns": [ { "include": "#state"}, { "include": "#value"}, { "include": "#action"}  ],
+			"name": "keyword.statement"
+		},
 		"tape": {
+			"begin": "\\s*\\{",
+			"end": "\\}",
+			"beginCaptures": {
+				"0": { "name": "keyword.tape.open" }
+			},
+			"endCaptures": {
+				"0": { "name": "keyword.tape.close" }
+			},
 			"patterns": [ { "include": "#state"}, { "include": "#value"} ],
-			"match": "\\s*\\{(#value)*(#state)(#value)+\\};",
 			"name": "keyword.tape"
 		},
 		"finalStates": {
-			"patterns": [ { "include": "#state"} ],
-			"match": "\\s*\\#define\\s*F\\s*=\\{#state(,(#state))*\\}",
-			"name": "keyword.finalStates"
+			"begin": "\\s*#define\\s*F\\s*=\\s*\\{",
+			"end": "\\}",
+			"beginCaptures": {
+				"0": { "name": "keyword.finalStates.open" }
+			},
+			"endCaptures": {
+				"0": { "name": "keyword.finalStates.close" }
+			},
+			"name": "keyword.finalStates",
+			"patterns": [ { "include": "#state"} ]
 		},
 		"value": {
 			"match": "\\s*(0|1)\\s*",
 			"name": "keyword.value"
-		},
-		"statement": {
-			"patterns": [ { "include": "#state"} ],
-			"match": "\\s*\\(\\s*(#state)\\s*,\\s*(0|1)\\s*,\\s*(0|1)\\s*,\\s*(H|L|R)\\s*,\\s*(#state)\\s*\\);",
-			"name": "keyword.statement"
 		},
 		"comment": {
 			"match": "//.*$",
@@ -40,6 +62,10 @@
 		"state": {
 			"match": "\\s*([A-Za-z]+[0-9])\\s*",
 			"name": "keyword.state"
+		},
+		"action": {
+			"match": "\\s*(H|L|R)\\s*",
+			"name": "keyword.action"
 		}
 	},
 	"scopeName": "source.tm"
