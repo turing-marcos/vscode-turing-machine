@@ -1,3 +1,5 @@
+[![CI](https://github.com/margual56/vscode-turing-machine/actions/workflows/publish.yml/badge.svg)](https://github.com/margual56/vscode-turing-machine/actions/workflows/publish.yml)
+
 # Turing Machine language support for Visual Studio Code
 This extension enables syntax highlighting for .tm files
 
