@@ -3,7 +3,7 @@
     "displayName": "turing-machine",
     "description": "Support for the Turing Machine language",
     "icon": "images/icon.png",
-    "version": "1.0.0",
+    "version": "0.2.0",
     "publisher": "MarcosGutirrezAlonso",
     "repository": {
         "type": "git",
@@ -25,9 +25,14 @@
         ],
         "themes": [
             {
-              "label": "Visual Studio 2019 Dark",
+              "label": "Visual Studio Dark",
               "uiTheme": "vs-dark",
               "path": "./themes/dark.json"
+            },
+			{
+              "label": "Visual Studio Light",
+              "uiTheme": "vs",
+              "path": "./themes/light.json"
             }
         ],
         "languages": [{
