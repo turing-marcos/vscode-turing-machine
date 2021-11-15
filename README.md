@@ -14,10 +14,10 @@ Note: This extension does **NOT** provide error highlighting support or hints. T
 
 ## Release Notes
 
-### 0.2.0
+### 1.1.0
 
 Theming improvements
 
-### 0.1.0
+### 1.0.0
 
 Initial extension support
