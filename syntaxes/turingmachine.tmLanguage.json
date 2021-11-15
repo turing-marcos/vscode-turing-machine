@@ -60,7 +60,7 @@
 			"name": "comment"
 		},
 		"state": {
-			"match": "\\s*([A-Za-z]+[0-9])\\s*",
+			"match": "\\s*([A-Za-z]+[0-9]?)\\s*",
 			"name": "keyword.state"
 		},
 		"action": {
