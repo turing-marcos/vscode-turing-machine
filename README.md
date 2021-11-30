@@ -8,6 +8,11 @@ This extension enables syntax highlighting for .tm files
 
 Check out the [Turing Machine Simulator](https://github.com/margual56/TuringMachine)
 
+
+## Marketplace links
+* [Microsoft VScode marketplace](https://marketplace.visualstudio.com/items?itemName=MarcosGutirrezAlonso.turing-machine)
+* [Open-vsx marketplace](https://open-vsx.org/extension/MarcosGutirrezAlonso/turing-machine)
+
 ## Features
 
 Syntax Highlighting and file icons.
