@@ -1,4 +1,4 @@
-[![CI](https://github.com/margual56/turing-vscode/actions/workflows/publish.yml/badge.svg)](https://github.com/margual56/vscode-turing-machine/actions/workflows/publish.yml)
+[![CI](https://github.com/margual56/vscode-turing-machine/actions/workflows/publish.yml/badge.svg)](https://github.com/margual56/vscode-turing-machine/actions/workflows/publish.yml)
 
 # Turing Machine
 
@@ -15,8 +15,8 @@ Check out the new
 
 ## Marketplace links
 
--   [Microsoft VScode marketplace](https://marketplace.visualstudio.com/items?itemName=MarcosGutirrezAlonso.turing-machine)
--   [Open-vsx marketplace](https://open-vsx.org/extension/MarcosGutirrezAlonso/turing-machine)
+- [Microsoft VScode marketplace](https://marketplace.visualstudio.com/items?itemName=MarcosGutirrezAlonso.turing-machine)
+- [Open-vsx marketplace](https://open-vsx.org/extension/MarcosGutirrezAlonso/turing-machine)
 
 ## Features
 
