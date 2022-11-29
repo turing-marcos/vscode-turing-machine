@@ -1,72 +1,52 @@
 {
-	"name": "Turing Machine",
-	"patterns": [
-		{ "include": "#tape"},
-		{ "include": "#finalStates"},
-		{ "include": "#instruction" },
-		{ "include": "#state"},
-		{ "include": "#value"},
-		{ "include": "#action"}
-	],
-	"repository": {
-		"instruction": {
-			"patterns": [
-				{ "include": "#statement" }, 
-				{ "include": "#comment" }
-			]
-		},
-		"statement": {
-			"begin": "\\s*\\(",
-			"end": "\\)",
-			"beginCaptures": {
-				"0": { "name": "keyword.statement.open" }
-			},
-			"endCaptures": {
-				"0": { "name": "keyword.statement.close" }
-			},
-			"patterns": [ { "include": "#state"}, { "include": "#value"}, { "include": "#action"}  ],
-			"name": "keyword.statement"
-		},
-		"tape": {
-			"begin": "\\s*\\{",
-			"end": "\\}",
-			"beginCaptures": {
-				"0": { "name": "keyword.tape.open" }
-			},
-			"endCaptures": {
-				"0": { "name": "keyword.tape.close" }
-			},
-			"patterns": [ { "include": "#state"}, { "include": "#value"} ],
-			"name": "keyword.tape"
-		},
-		"finalStates": {
-			"begin": "\\s*#define\\s*F\\s*=\\s*\\{",
-			"end": "\\}",
-			"beginCaptures": {
-				"0": { "name": "keyword.finalStates.open" }
-			},
-			"endCaptures": {
-				"0": { "name": "keyword.finalStates.close" }
-			},
-			"name": "keyword.finalStates",
-			"patterns": [ { "include": "#state"} ]
-		},
-		"value": {
-			"match": "\\s*(0|1)\\s*",
-			"name": "keyword.value"
-		},
-		"comment": {
-			"match": "//.*$",
-			"name": "comment"
-		},
-		"state": {
-			"match": "\\s*([A-Za-z]+[0-9]?)\\s*",
-			"name": "keyword.state"
-		},
-		"action": {
-			"match": "\\s*(H|L|R)\\s*",
-			"name": "keyword.action"
-		}
-	},
-	"scopeName": "source.tm"
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "turingfile",
+    "fileTypes": ["tm"],
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#comments"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.turingfile",
+                    "match": "I|F"
+                },
+                {
+                    "name": "constant.character.escape.turingfile",
+                    "match": "R|L|H"
+                },
+                {
+                    "name": "variable.language.implicit.turingfile",
+                    "match": "([a-zA-Z][^HLR])+[0-9]*"
+                },
+                
+                {
+                    "name": "constant.numeric.turingfile",
+                    "match": "1|0"
+                }
+            ]
+        },
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.turingfile",
+                    "match": "//.*"
+                },
+                {
+                    "name": "comment.block.documentation.turingfile",
+                    "match": "///.*"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.turingfile"
 }

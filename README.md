@@ -1,37 +1,37 @@
-[![CI](https://github.com/margual56/vscode-turing-machine/actions/workflows/publish.yml/badge.svg)](https://github.com/margual56/vscode-turing-machine/actions/workflows/publish.yml)
+[![CI](https://github.com/margual56/turing-vscode/actions/workflows/publish.yml/badge.svg)](https://github.com/margual56/vscode-turing-machine/actions/workflows/publish.yml)
 
-# Turing Machine language support for Visual Studio Code
-This extension enables syntax highlighting for .tm files
+# Turing Machine
+
+A syntax highlighter for
+[Turing Machine syntax](https://github.com/margual56/turing-machine-2.0) grammar
+files.
+
+**Enjoy!**
 
 ![A demo view of what it looks like](images/demo.png)
 
-
-Check out the [Turing Machine Simulator](https://github.com/margual56/TuringMachine)
-
+Check out the new
+[Turing Machine Simulator](https://github.com/margual56/turing-machine-2.0)!
 
 ## Marketplace links
-* [Microsoft VScode marketplace](https://marketplace.visualstudio.com/items?itemName=MarcosGutirrezAlonso.turing-machine)
-* [Open-vsx marketplace](https://open-vsx.org/extension/MarcosGutirrezAlonso/turing-machine)
+
+-   [Microsoft VScode marketplace](https://marketplace.visualstudio.com/items?itemName=MarcosGutirrezAlonso.turing-machine)
+-   [Open-vsx marketplace](https://open-vsx.org/extension/MarcosGutirrezAlonso/turing-machine)
 
 ## Features
 
 Syntax Highlighting and file icons.
 
-Note: This extension does **NOT** provide error highlighting support or hints. That feature is another whole ordeal I won't get into, sorry :)
+Note: This extension does **NOT** provide error highlighting support or hints.
+That feature is another whole ordeal I won't get into, sorry :)
 
-## Release Notes
-(See the [changelog](https://github.com/margual56/vscode-turing-machine/blob/ffe6e163b2331c86f5d2ffc609fd6811dbaabeb5/CHANGELOG.md) for a more detailed log).
+## Thanks
 
-### [1.1.2]
-* Updated definition of "state" (now states don't have to have a number in the name)
+This extension is a fork of
+[Stef Gijsberts](https://github.com/Stef-Gijsberts/pest-Syntax-Highlighting-for-vscode)'
+Pest syntax highlighter. Go check it out!
 
-### [1.1.1]
-* Reduced the VScode version requirement, so that the extension works on any version above 1.40
+## What's new?
 
-### [1.1.0]
-
-* Theming improvements
-
-### [1.0.0]
-
-* Initial extension support
+All notable changes are listed in the
+[changelog](https://github.com/margual56/turing-vscode/blob/master/CHANGELOG.md).

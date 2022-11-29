@@ -1,50 +1,45 @@
 {
     "name": "turing-machine",
-    "displayName": "turing-machine",
-    "description": "Support for the Turing Machine language",
+    "displayName": "Turing Machine",
+    "description": "Syntax highlighting for Turing Machine's syntax",
+    "version": "2.0.0",
     "icon": "images/icon.png",
-    "version": "1.1.2",
     "publisher": "MarcosGutirrezAlonso",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/margual56/vscode-turing-machine"
     },
     "engines": {
-        "vscode": "^1.40.0"
+        "vscode": "^1.21.0"
     },
     "categories": [
         "Programming Languages"
     ],
     "contributes": {
-        "iconThemes": [
+        "languages": [
             {
-                "id": "turingmachineicon",
-                "label": "TuringMachineIcon",
-                "path": "./icon-theme.json"
+                "id": "tmfile",
+                "aliases": [
+                    "tmfile",
+                    "turingfile"
+                ],
+                "extensions": [
+                    ".tm"
+                ],
+                "configuration": "./language-configuration.json",
+                "icon": {
+                    "light": "./images/file-icon.png",
+                    "dark": "./images/file-icon.png"
+                }
             }
         ],
-        "themes": [
+        "grammars": [
             {
-              "label": "Visual Studio Dark",
-              "uiTheme": "vs-dark",
-              "path": "./themes/dark.json"
-            },
-			{
-              "label": "Visual Studio Light",
-              "uiTheme": "vs",
-              "path": "./themes/light.json"
+                "language": "tmfile",
+                "scopeName": "source.turingfile",
+                "path": "./syntaxes/tmfile.tmLanguage.json"
             }
-        ],
-        "languages": [{
-            "id": "turingmachine",
-            "aliases": ["Turing Machine", "turingmachine"],
-            "extensions": [".tm"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "turingmachine",
-            "scopeName": "source.tm",
-            "path": "./syntaxes/turingmachine.tmLanguage.json"
-        }]
+        ]
     }
 }
